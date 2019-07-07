@@ -2,8 +2,9 @@
   "devToolsPort": 19002,
   "expoServerPort": 19000,
   "packagerPort": 19001,
-  "packagerPid": 2338,
+  "packagerPid": 3037,
   "expoServerNgrokUrl": "https://j6-kwg.anonymous.e4e.exp.direct",
   "packagerNgrokUrl": "https://packager.j6-kwg.anonymous.e4e.exp.direct",
-  "ngrokPid": 2364
+  "ngrokPid": 3058,
+  "webpackServerPort": null
 }
