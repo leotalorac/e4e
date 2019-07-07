@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View,TextInput,TouchableOpacity, Button} from 'react-native';
+import { StyleSheet, Text, View,TextInput,TouchableOpacity, Button,Image} from 'react-native';
 import { Constants } from 'expo';
 export default class Login extends React.Component{
     static navigationOptions = {
@@ -10,7 +10,7 @@ export default class Login extends React.Component{
         return(
             <View>
             <View style={styles.titleContainer}>
-                <Text style={styles.title}> Login</Text>
+              <Image source={require('./logo.png')} style={styles.logo}></Image>
             </View>
             <View style={styles.container}>
             <Text style={styles.label}>Name:</Text>
@@ -87,4 +87,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     width:"100%",
   },
+  logo:{
+    height:200,
+    resizeMode: 'contain'
+  }
   });
