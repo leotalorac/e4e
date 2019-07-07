@@ -17,14 +17,16 @@ export default class Mapa extends React.Component{
                 latitudeDelta: 0.0922,
                 longitudeDelta: 0.0421,
                 }}
+                style={styles.mapStyle} 
             />
             </View>
         )
     }
 }
-const styles = {
+const styles = StyleSheet.create({
     mapStyle:{
         height:"100%",
-        width:"100%"
+        width:"100%",
+        flex: 1
     }
-}
+})
