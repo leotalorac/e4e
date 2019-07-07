@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View,TextInput,TouchableOpacity} from 'react-native';
+import { StyleSheet, Text, View,TextInput,TouchableOpacity,ImageBackground} from 'react-native';
 
 export default class City extends React.Component{
     static navigationOptions = {
@@ -9,18 +9,20 @@ export default class City extends React.Component{
         const {navigate} = this.props.navigation;
         return(
             <View>
-                <ImageBackground source={"https://cdn.londonandpartners.com/assets/73295-640x360-london-skyline-ns.jpg"} style={styles.cityContainer}>
-                    <Text>London</Text>
+                <ImageBackground source={{uri:"https://static.iris.net.co/semana/upload/images/2017/10/27/545243_1.jpg"} } style={styles.cityContainer}>
+                    <Text>Bogota</Text>
                 </ImageBackground>
             </View>
         )
     }
 }
 const styles = StyleSheet.create({
-    cityContainer = {
+    cityContainer: {
         width: "100%",
-        height:"20%",
+        height:"200",
+        maxHeight:"200",
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        resizeMode: 'stretch'
     }
 })
